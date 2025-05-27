@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VayuhFlow</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Vayuh Logo" />
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <!-- Menu -->
+      <nav class="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#grants">Grants</a>
+        <a href="#token">Token</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Social Icons -->
+      <div class="nav-right">
+        <a href="https://twitter.com/i/flow/login" target="_blank" rel="noopener noreferrer">
+          <img src="images/x-icon.png" alt="X Icon" class="icon" />
+        </a>
+        <a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">
+          <img src="images/telegram-icon.png" alt="Telegram Icon" class="icon" />
+        </a>
+        <a href="#" class="docs-button">Docs</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Add your other sections (e.g., hero, about, etc.) here -->
+  <!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="video-container">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="images/Untitled design.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay-grid">
+      <div class="text-left">
+        <h1>
+          Climate Action<br />
+          Through Blockchain<br />
+          and AI-Driven Data<br />
+          Networks
+        </h1>
+        <div class="buttons">
+        <button>  Learn </button>
+        <button>  Pitch Deck </button>
+      </div>
+        
+      </div>
+      <div class="text-right">
+        <p>
+          Empowering communities with transformative climate data to drive<br />
+          AI innovation and build a sustainable future. Together, we redefine<br />
+          the fight for our planet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-left">
+      <h2>About us</h2>
+    </div>
+    <div class="about-right">
+      <p>
+        At Vayuh, we’re on a mission to empower individuals and communities to take control of our planet’s future.
+        than just a platform, Vayuh is a transformative movement that enables you to contribute and validate high-quality climate data.
+        This data fuels cutting-edge Climate AI models designed to tackle the most pressing environmental challenges of our time.
+      </p>
+      <p>
+        Our journey began in 2018, with a focus on developing low-cost indoor air quality monitors.
+        Over time, we evolved to leverage that data in building AI models, driving deeper insights and innovative solutions for a sustainable world.
+      </p>
+      <p>
+        We understand that the power of an AI model lies in the strength of its training data.
+        To build remarkable AI, one must begin with remarkable data.
+        That’s why we prioritize collaboration and innovation, ensuring the data we pool is accurate, impactful, and transformative.
+      </p>
+
+      <!-- Backed By inside About -->
+      <div class="backed-by-inline">
+        <h3>Backed by</h3>
+        <div class="sponsor-logos">
+          <div class="sponsor">
+            <img src="images/coinfetti.png" alt="Coinfetti">
+          </div>
+          <div class="sponsor">
+            <img src="images/tradegym.png" alt="TradeGym">
+          </div>
+          <div class="sponsor">
+            <img src="images/cryptowig.png" alt="CryptoWig">
+          </div>
+          <div class="sponsor">
+            <img src="images/fincue.png" alt="Fincue">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Grants Section -->
+<section class="grants-section" id="grants">
+  <h2 class="grants-heading">Grants</h2>
+  <div class="grants-grid">
+    
+    <div class="grant-card">
+      <img src="images/research-icon.png" alt="Research Grant">
+      <p>
+        Funding academics and specialists who conduct and publish innovative research in Climate Science.
+      </p>
+  <a href="  https://docs.google.com/forms/d/e/1FAIpQLScg1M0MBnPaLtBkPceNthCdc9WShPgXYU4MJF53UdLP1e4jtA/viewform?usp=sf_link"target="_blank">
+  Apply for a Research Grant
+</a>
+    </div>
+
+    <div class="grant-card">
+      <img src="images/integration-icon.png" alt="Integration Grant">
+      <p>
+        Encourage other teams to develop and expand    <br/> on the Vayuh Network
+      </p><a href="  https://docs.google.com/forms/d/e/1FAIpQLScg1M0MBnPaLtBkPceNthCdc9WShPgXYU4MJF53UdLP1e4jtA/viewform?usp=sf_link" target="_blank">
+    
+        Apply for an Integration Grant
+      </a>
+    </div>
+
+    <div class="grant-card">
+      <img src="images/social-icon.png" alt="Social Grant">
+      <p>
+        Working with NGOs, nonprofits, and socially focused projects <br/>in climate science
+      </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScg1M0MBnPaLtBkPceNthCdc9WShPgXYU4MJF53UdLP1e4jtA/viewform?usp=sf_link"target="_blank">
+        Apply for a Social Grant
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Token Features Section -->
+<section class="token-features" id="token">
+  <div class="token-wrapper">
+    <div class="token-left">
+      <h2>Token Features</h2>
+
+      <div class="feature-block">
+        <h3>Empower User</h3>
+        <p>
+          Vayuh app works with various open source air sensors to educate users about the air they breathe and rewards them with tokens for sharing their air quality data.
+        </p>
+      </div>
+
+      <div class="feature-block">
+        <h3>Data Validation</h3>
+        <p>
+          Using Blockchain and Machine Learning, Vayuh network validates readings and detects outliers, resulting in stable, reliable and immutable readings.
+        </p>
+      </div>
+
+      <div class="feature-block">
+        <h3>Grant Programs</h3>
+        <p>
+          Grants are awarded to researchers, social projects, and integrations that help improve climate data access and quality.
+        </p>
+      </div>
+
+      <div class="feature-block">
+        <h3>Governance</h3>
+        <p>
+          Vayuh token ($VAYUH) holders earn the right to create proposals and vote on them.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="token-right">
+      <img src="images/token-diagram.png" alt="Token Ecosystem Diagram" />
+    </div>
+  </div>
+</section>
+<!-- FAQ Section -->
+<section class="faq" id="faq">
+  <div class="faq-grid">
+    <div class="faq-left">
+      <h2>Frequently asked<br>questions</h2>
+    </div>
+    <div class="faq-right">
+
+      <div class="faq-block">
+        <h3>What is Vayuh?</h3>
+        <p>Vayuh is a blockchain and AI driven climate data network that incentivizes data contributors and validators for participating in building the Vayuh ecosystem.</p>
+      </div>
+
+      <div class="faq-block">
+        <h3>How can I participate in the Vayuh ecosystem?</h3>
+        <p>You can participate in several ways.</p>
+        <ul>
+          <li>1. Contribute, by feeding IOT and Sensor data for various climate parameters like air quality, temperature, humidity etc. directly to our network using the Vayuh app.</li>
+          <li>2. Contribute, peer reviewed data from your research to our ecosystem.</li>
+          <li>3. Validate, by establishing yourself as a trusted partner you can earn rewards for peer reviewing data.</li>
+          <li>4. Develop AI analytical models to better interpret the data.</li>
+        </ul>
+      </div>
+<div class="faq-block">
+  <h3>How do the AI models work?</h3>
+  <p>
+    In the past 7 years, since the inception of Vayuh, we have built several AI models that help process climate data.
+    Our AI models can automatically review the incoming data and look for inconsistencies and errors.
+    The models look for missing values, historical trend comparisons, confidence checks to assign a quality score to the data set.
+    These data sets are then used to train other AI models that work in conjunction with various EPA models like AERMOD, CMAQ etc.
+    and other peer reviewed models in research stages.
+  </p>
+</div>
+
+<div class="faq-block">
+  <h3>How can I buy the Vayuh token?</h3>
+  <p>
+    The presale date is yet to be announced. Please follow our X and Telegram page for updates.
+  </p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Community Testimonials Section -->
+<section class="testimonials">
+  <h2>Here's what our community says</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <p>
+        “Vayuh is revolutionizing climate action by combining AI with decentralized data networks. Their innovative approach turns data into actionable insights, empowering us to reshape the future”
+      </p>
+      <h4>- Aria Calderon</h4>
+    </div>
+    <div class="testimonial">
+      <p>
+        “Vayuh is leading the way in AI-driven climate models by combining trusted EPA models like AERMOD with high-quality data from NASA, Copernicus, and more. Their approach enhances accuracy and helps us better understand and address climate challenges.”
+      </p>
+      <h4>- Kael Duvall</h4>
+    </div>
+  </div>
+</section>
+
+<!-- Partner Banner Section -->
+<section class="partners">
+ 
+  <div class="partner-image">
+    <img src="images/partners-banner.png" alt="Partner Logos" />
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>Contact us</h2>
+    <p class="contact-subtext">
+      Feel free to contact us with any questions or concerns. You can use the form on our website or email us directly.
+      We appreciate your interest and look forward to hearing from you.
+    </p>
+
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+
+      <label for="email">Your email*</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <div id="thank-you-message" class="thank-you hidden">
+      Thank you for reaching out! We'll be in touch soon.
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="images/logo.png" alt="Vayuh Logo" class="footer-logo" />
+    <p class="tagline">Blockchain and AI-Driven Climate Data Network</p>
+
+  <!-- Social Icons -->
+<div class="social-icons">
+  <a href="https://twitter.com/i/flow/login" target="_blank" rel="noopener noreferrer">
+    <img src="images/x-icon.png" alt="X Icon" class="icon" />
+  </a>
+  <a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">
+    <img src="images/telegram-icon.png" alt="Telegram Icon" class="icon" />
+  </a>
+</div>
+
+    <p class="copyright">© 2024. All rights reserved.</p>
+  </div>
+
+<div class="subscribe-box">
+  <h4>CONNECT</h4>
+  <label for="email">Enter your email address</label>
+  <input type="email" id="email" placeholder="Your email for updates" />
+  <button onclick="submitEmail()">Join our community now</button>
+
+  <div id="thankYouText" class="thank-you-text">Thank you for joining us!</div>
+</div>
+
+
+</footer>
+
+
+<section class="contact" id="contact">...</section>
+
+
+  
+  <!-- Responsive Menu Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
