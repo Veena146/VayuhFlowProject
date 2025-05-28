@@ -64,9 +64,13 @@
           Networks
         </h1>
         <div class="buttons">
-        <button>  Learn </button>
-        <button>  Pitch Deck </button>
-      </div>
+        <button onclick="document.getElementById('token').scrollIntoView({ behavior: 'smooth' })">
+  Learn
+</button>
+
+        <button onclick="window.location.href='pitchdeck.html'" class="button">
+  Pitch Deck
+</button>
         
       </div>
       <div class="text-right">
@@ -358,28 +362,43 @@
   💬
 </div>
 
+<!-- Chat Icon -->
+<div id="chat-icon" onclick="toggleChatbox()">💬</div>
+
 <!-- Chat Box -->
 <div id="chatbox">
   <div class="chat-header">
     Chat with us
     <span onclick="toggleChatbox()" class="close-btn">×</span>
   </div>
-  <div class="chat-body">
+  <div class="chat-body" id="chat-body">
     <p>Hello! How can we help you?</p>
-    <!-- You can integrate actual chat functionality here -->
   </div>
   <div class="chat-input">
-    <input type="text" placeholder="Type your message..." />
-    <button>Send</button>
+    <input type="text" id="chat-input-field" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
   </div>
 </div>
+
+<!-- JavaScript -->
 <script>
   function toggleChatbox() {
     const chatbox = document.getElementById("chatbox");
-    if (chatbox.style.display === "none" || chatbox.style.display === "") {
-      chatbox.style.display = "flex";
-    } else {
-      chatbox.style.display = "none";
+    chatbox.style.display = chatbox.style.display === "flex" ? "none" : "flex";
+  }
+
+  function sendMessage() {
+    const inputField = document.getElementById("chat-input-field");
+    const message = inputField.value.trim();
+    if (message) {
+      const chatBody = document.getElementById("chat-body");
+      const userMsg = document.createElement("p");
+      userMsg.style.textAlign = "right";
+      userMsg.style.margin = "5px 0";
+      userMsg.textContent = message;
+      chatBody.appendChild(userMsg);
+      inputField.value = "";
+      chatBody.scrollTop = chatBody.scrollHeight;
     }
   }
 </script>

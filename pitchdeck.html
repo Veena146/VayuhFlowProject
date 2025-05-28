@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VayuhFlow</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      
+      <!-- Logo -->
+      <div class="nav-logo">
+        <img src="images/logo.png" alt="Vayuh Logo" />
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <!-- Menu -->
+      <nav class="nav-menu">
+        <a href="#home" class="active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="#about">About</a>
+        <a href="#grants">Grants</a>
+        <a href="#token">Token</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      
+      <!-- Social Icons -->
+      <div class="nav-right">
+        <a href="https://twitter.com/i/flow/login" target="_blank" rel="noopener noreferrer">
+          <img src="images/x-icon.png" alt="X Icon" class="icon" />
+        </a>
+        <a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">
+          <img src="images/telegram-icon.png" alt="Telegram Icon" class="icon" />
+        </a>
+        <a href="#" class="docs-button">Docs</a>
+      </div>
+    </div>
+  </header>
+<!-- Contact Section
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>Contact us</h2>
+    <p class="contact-subtext">
+      Feel free to contact us with any questions or concerns. You can use the form on our website or email us directly.
+      We appreciate your interest and look forward to hearing from you.
+    </p>
+
+    <form id="contact-form" onsubmit="handleSubmit(event)">
+      <label for="name">Name*</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+
+      <label for="email">Your email*</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+
+    <div id="thank-you-message" class="thank-you hidden">
+      Thank you for reaching out! We'll be in touch soon.
+    </div>
+  </div>
+</section> -->
+
+
+<!-- PDF Section -->
+  <div class="pdf-container">
+    <iframe src="images/Vayuh Pitch Deck for website.pdf" width="100%" height="600px" style="border:none;"></iframe>
+  </div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-left">
+    <img src="images/logo.png" alt="Vayuh Logo" class="footer-logo" />
+    <p class="tagline">Blockchain and AI-Driven Climate Data Network</p>
+
+  <!-- Social Icons -->
+<div class="social-icons">
+  <a href="https://twitter.com/i/flow/login" target="_blank" rel="noopener noreferrer">
+    <img src="images/x-icon.png" alt="X Icon" class="icon" />
+  </a>
+  <a href="https://web.telegram.org/k/" target="_blank" rel="noopener noreferrer">
+    <img src="images/telegram-icon.png" alt="Telegram Icon" class="icon" />
+  </a>
+</div>
+
+    <p class="copyright">© 2024. All rights reserved.</p>
+  </div>
+
+<div class="subscribe-box">
+  <h4>CONNECT</h4>
+  <label for="email">Enter your email address</label>
+  <input type="email" id="email" placeholder="Your email for updates" />
+  <button onclick="submitEmail()">Join our community now</button>
+
+  <div id="thankYouText" class="thank-you-text">Thank you for joining us!</div>
+</div>
+
+
+</footer>
+
+
+<section class="contact" id="contact">...</section>
+
+
+  
+  <!-- Responsive Menu Toggle Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".nav-menu");
+      menu.classList.toggle("active");
+    }
+  </script>
+  <!-- Chat Icon -->
+</body>
+</html>
