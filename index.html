@@ -6,45 +6,7 @@
   <title>VayuhFlow</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<!-- Chatbot Widget -->
-<div id="chatbot" style="position:fixed; bottom:20px; right:20px; width:300px; background:white; border:1px solid #ccc; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.2); font-family:sans-serif;">
-  <div style="background:#1f3b4d; color:white; padding:10px; font-weight:bold;">Vayuh Chat</div>
-  <div id="chat-log" style="height:200px; overflow-y:auto; padding:10px; font-size:14px;"></div>
-  <input type="text" id="chat-input" placeholder="Ask something..." style="width:100%; padding:10px; border:none; border-top:1px solid #ccc;" />
-</div>
-<script>
-  const chatLog = document.getElementById('chat-log');
-  const chatInput = document.getElementById('chat-input');
 
-  chatInput.addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-      const userMessage = chatInput.value.trim();
-      if (!userMessage) return;
-
-      appendMessage("You", userMessage);
-      chatInput.value = "";
-
-      // Simulate bot response (static logic for now)
-      const botReply = getBotReply(userMessage);
-      setTimeout(() => appendMessage("Bot", botReply), 500);
-    }
-  });
-
-  function appendMessage(sender, message) {
-    const msgDiv = document.createElement('div');
-    msgDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
-    chatLog.appendChild(msgDiv);
-    chatLog.scrollTop = chatLog.scrollHeight;
-  }
-
-  function getBotReply(msg) {
-    msg = msg.toLowerCase();
-    if (msg.includes("hello")) return "Hi there! How can I help you?";
-    if (msg.includes("wind")) return "Vayuh harnesses wind energy for smart cities.";
-    if (msg.includes("vision")) return "Our vision is to merge nature and innovation.";
-    return "Sorry, I don't understand that yet.";
-  }
-</script>
 
 <body>
 
@@ -391,6 +353,36 @@
       menu.classList.toggle("active");
     }
   </script>
+  <!-- Chat Icon -->
+<div id="chat-icon" onclick="toggleChatbox()">
+  💬
+</div>
+
+<!-- Chat Box -->
+<div id="chatbox">
+  <div class="chat-header">
+    Chat with us
+    <span onclick="toggleChatbox()" class="close-btn">×</span>
+  </div>
+  <div class="chat-body">
+    <p>Hello! How can we help you?</p>
+    <!-- You can integrate actual chat functionality here -->
+  </div>
+  <div class="chat-input">
+    <input type="text" placeholder="Type your message..." />
+    <button>Send</button>
+  </div>
+</div>
+<script>
+  function toggleChatbox() {
+    const chatbox = document.getElementById("chatbox");
+    if (chatbox.style.display === "none" || chatbox.style.display === "") {
+      chatbox.style.display = "flex";
+    } else {
+      chatbox.style.display = "none";
+    }
+  }
+</script>
 
 </body>
 </html>
