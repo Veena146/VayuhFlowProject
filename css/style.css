@@ -1434,3 +1434,16 @@ textarea {
       aspect-ratio: 3 / 4; /* taller view for phones */
     }
   }
+  
+  body {
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box; /* Helps prevent layout issues */
+}
+img, video, iframe {
+  max-width: 100%;
+  height: auto;
+}

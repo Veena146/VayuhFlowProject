@@ -74,4 +74,12 @@ function handleSubmit(event) {
 }
 
 
+ const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const links = mobileMenu.querySelectorAll("a");
+
+
+
+
+
 
