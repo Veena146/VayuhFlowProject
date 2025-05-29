@@ -402,6 +402,30 @@
     }
   }
 </script>
+<script>
+  // Auto-close menu when a link is clicked
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      const menu = document.querySelector(".nav-menu");
+      menu.classList.remove("active");
+    });
+  });
+</script>
+<!-- Responsive Menu Toggle Script -->
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-menu");
+    menu.classList.toggle("active");
+  }
+
+  // ✅ Close menu when a link is clicked
+  document.querySelectorAll(".nav-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+      const menu = document.querySelector(".nav-menu");
+      menu.classList.remove("active");
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -1447,3 +1447,22 @@ img, video, iframe {
   max-width: 100%;
   height: auto;
 }
+/* Fix About section overflow issue */
+.about {
+  overflow-x: hidden;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;           /* Allow logos to wrap */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow-x: hidden;        /* Prevent scroll */
+}
+
+@media (max-width: 768px) {
+  .about-right {
+    max-width: 100%;
+  }
+}
